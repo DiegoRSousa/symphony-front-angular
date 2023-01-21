@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'symphony-front';
+  produto: any;
+
+  salvar($event: any) {
+    console.log($event)
+    this.produto = $event;
+  }
 }

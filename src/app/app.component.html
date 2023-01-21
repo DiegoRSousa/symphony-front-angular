@@ -1,1 +1,4 @@
-<app-novo-produto></app-novo-produto>
+<app-novo-produto (aoSalvar)="salvar($event)" ></app-novo-produto>
+
+<p>Codigo: {{produto?.codigo}}</p>
+<p>Codigo: {{produto?.nome}}</p>

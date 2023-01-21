@@ -1,21 +1,21 @@
 <section class="container">
-<form class="formulario">
+<form class="formulario" (ngSubmit)="salvar()">
     <h2 class="formulario__titulo">Novo Produto</h2>
     <div class="form-field">
       <label class="form-field__label" for="codigo">Codigo:</label>
-      <input class="form-field__label" id="codigo" type="text"/>
+      <input class="form-field__label" id="codigo" type="text" [(ngModel)]="codigo" name="codigo" />
     </div>
     <div  class="form-field">
       <label class="form-field__label" for="nome">Nome:</label>
-      <input class="form-field__label" id="nome" type="text"/>
+      <input class="form-field__label" id="nome" type="text" [(ngModel)]="nome" name="nome" />
     </div>
     <div  class="form-field">
       <label class="form-field__label" for="preco">Preco:</label>
-      <input class="form-field__label" id="preco" type="number"/>
+      <input class="form-field__label" id="preco" type="number" [(ngModel)]="preco" name="preco" />
     </div>
     <div  class="form-field">
       <label class="form-field__label" for="status">Status:</label>
-      <input class="form-field__label" id="status" type="text"/>
+      <input class="form-field__label" id="status" type="text" [(ngModel)]="status" name="status" />
     </div>
     <div class="botao-wrapper">
       <button class="botao">Salvar</button>
